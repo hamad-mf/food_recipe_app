@@ -47,17 +47,18 @@ class Onboardingscreen extends StatelessWidget {
               text: TextSpan(
                   text: "60k+",
                   style: TextStyle(
-                      color: Colors.white,
+                      color: ColorConstants.mainwhite,
                       fontWeight: FontWeight.bold,
                       fontSize: 16),
                   children: [
                 TextSpan(
                     text: " Premium recipes",
                     style: TextStyle(
-                        color: Colors.white,
+                        color: ColorConstants.mainwhite,
                         fontWeight: FontWeight.normal,
                         fontSize: 16))
-              ]))
+              ])
+              )
         ],
       ),
     );
