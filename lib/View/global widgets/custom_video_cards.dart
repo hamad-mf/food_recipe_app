@@ -3,13 +3,15 @@ import 'package:food_recipe_app/utils/constants/color_constants.dart';
 
 class Customvideocard extends StatelessWidget {
   final String rating;
+  final double width;
   final String duration;
   final String title;
   final String username;
   final String thumbnail;
   final String dp;
 
-  const Customvideocard({
+ Customvideocard({
+    required this.width,
     required this.rating,
     required this.duration,
     required this.title,
@@ -22,13 +24,13 @@ class Customvideocard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 280,
+      width: width,
       child: Column(
         children: [
           Container(
             padding: EdgeInsets.all(8),
             height: 180,
-            width: 280,
+            width: width,
             decoration: BoxDecoration(
                 color: Colors.amber,
                 borderRadius: BorderRadius.circular(13),

@@ -95,7 +95,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemBuilder: (context, index) => PopularCategoryCard(
                         title: DummyDb2.popularcategorylist[index]["title"],
                         time: DummyDb2.popularcategorylist[index]["time"],
-                        itemimage: DummyDb2.popularcategorylist[index]["itemimage"],
+                        itemimage: DummyDb2.popularcategorylist[index]
+                            ["itemimage"],
                       ),
                   separatorBuilder: (context, index) => SizedBox(
                         width: 16,
@@ -149,6 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) => Customvideocard(
+                    width: 280,
                     rating: DummyDb.trendingNowList[index]["rating"],
                     duration: DummyDb.trendingNowList[index]["duration"],
                     title: DummyDb.trendingNowList[index]["title"],

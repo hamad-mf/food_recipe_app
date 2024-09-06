@@ -28,7 +28,7 @@ class PopularCategoryCard extends StatelessWidget {
           child: Container(
             height: 176,
             decoration: BoxDecoration(
-              color: ColorConstants.greyshade3,
+              color: Colors.red,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Column(
@@ -76,7 +76,11 @@ class PopularCategoryCard extends StatelessWidget {
                             fontSize: 12,
                             color: ColorConstants.mainblack,
                           )),
-                      Icon(Icons.bookmark_outline)
+                      CircleAvatar(
+                        backgroundColor: ColorConstants.mainwhite,
+                        radius: 12,
+                        child: Icon(Icons.bookmark_border),
+                      )
                     ],
                   ),
                 )
