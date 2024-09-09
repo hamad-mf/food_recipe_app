@@ -26,63 +26,57 @@ class PopularCategoryCard extends StatelessWidget {
           left: 0,
           right: 0,
           child: Container(
+            padding: EdgeInsets.all(12),
             height: 176,
             decoration: BoxDecoration(
-              color: Colors.red,
+              color: ColorConstants.greyshade3,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
-                  height: 70,
+                  height: 20,
                 ),
-                Center(
-                  child: Text(
-                    "$title",
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
+                Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
                       color: ColorConstants.mainblack,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600),
                 ),
-                SizedBox(
-                  height: 18,
-                ),
-                Spacer(),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
-                  child: Text(
-                    "Time",
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 12,
-                        color: ColorConstants.greyshade1),
-                  ),
-                ),
-                SizedBox(
-                  height: 4,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("$time Mins",
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Time",
                           style: TextStyle(
-                            fontWeight: FontWeight.w600,
-                            fontSize: 12,
-                            color: ColorConstants.mainblack,
-                          )),
-                      CircleAvatar(
-                        backgroundColor: ColorConstants.mainwhite,
-                        radius: 12,
-                        child: Icon(Icons.bookmark_border),
-                      )
-                    ],
-                  ),
+                              color: ColorConstants.greyshade1,
+                              fontSize: 12,
+                              fontWeight: FontWeight.normal),
+                        ),
+                        Text(
+                          "$time Mins",
+                          style: TextStyle(
+                              color: ColorConstants.mainblack,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    CircleAvatar(
+                      radius: 12,
+                      backgroundColor: ColorConstants.mainwhite,
+                      child: Icon(
+                        Icons.bookmark_add,
+                        size: 16,
+                      ),
+                    ),
+                  ],
                 )
               ],
             ),

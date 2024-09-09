@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/View/Home%20Screen/Widgets/popular_category_card.dart';
+import 'package:food_recipe_app/View/Recipee%20details%20Screen/recipee_details_screen.dart';
 import 'package:food_recipe_app/View/global%20widgets/custom_video_cards.dart';
 import 'package:food_recipe_app/dummy_db.dart';
 import 'package:food_recipe_app/utils/constants/color_constants.dart';
@@ -150,6 +151,17 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) => Customvideocard(
+                    onCardTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RecipeeDetailsScreen(
+                                    title: DummyDb.trendingNowList[index]
+                                        ["title"],
+                                    thumbnail: DummyDb.trendingNowList[index]
+                                        ["thumbnail"],
+                                  )));
+                    },
                     width: 280,
                     rating: DummyDb.trendingNowList[index]["rating"],
                     duration: DummyDb.trendingNowList[index]["duration"],
