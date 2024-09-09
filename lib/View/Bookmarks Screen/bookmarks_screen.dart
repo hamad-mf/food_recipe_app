@@ -53,7 +53,12 @@ class _BookmarksScreenState extends State<BookmarksScreen> {
                             builder: (context) => RecipeeDetailsScreen(
                                   title: DummyDb.trendingNowList[index]
                                       ["title"],
-                                  thumbnail: DummyDb.trendingNowList[index]["thumbnail"],
+                                  thumbnail: DummyDb.trendingNowList[index]
+                                      ["thumbnail"],
+                                  rating: DummyDb.trendingNowList[index]
+                                      ["rating"],
+                                  dp: DummyDb.trendingNowList[index]["dp"],
+                                  username: DummyDb.trendingNowList[index]["username"],
                                 )));
                   },
                   width: double.infinity,

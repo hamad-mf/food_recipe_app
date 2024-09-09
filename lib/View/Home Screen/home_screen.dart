@@ -160,6 +160,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                         ["title"],
                                     thumbnail: DummyDb.trendingNowList[index]
                                         ["thumbnail"],
+                                    rating: DummyDb.trendingNowList[index]
+                                        ["rating"],
+                                    dp: DummyDb.trendingNowList[index]["dp"],
+                                    username: DummyDb.trendingNowList[index]
+                                        ["username"],
                                   )));
                     },
                     width: 280,

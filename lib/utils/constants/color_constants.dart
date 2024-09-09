@@ -8,4 +8,5 @@ class ColorConstants {
   static Color greyshade2 = Color(0xffA9A9A9);
   static Color greyshade3 = Color(0xffF1F1F1);
   static Color lightblack = Color(0xff303030);
+  static Color starcolor = Color(0xffFFB661);
 }
