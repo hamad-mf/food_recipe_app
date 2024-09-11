@@ -1,3 +1,5 @@
+
+
 class DummyDb {
   static List trendingNowList = [
     {
@@ -175,5 +177,23 @@ class DummyDb2 {
       "itemimage":
           "https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
+  ];
+}
+
+class dummyDB3 {
+  static List ingredientsimg = [
+    {
+      "img":
+          "https://images.pexels.com/photos/806457/pexels-photo-806457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "name": "Egg"
+    },
+    {
+      "img":
+          "https://images.pexels.com/photos/1435706/pexels-photo-1435706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "name": "Milk"
+    },
+    {"img": "https://images.pexels.com/photos/306070/pexels-photo-306070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", "name": "Vanila"},
+    {"img": "https://images.pexels.com/photos/94443/pexels-photo-94443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", "name": "Butter"},
+    {"img": "https://images.pexels.com/photos/2067631/pexels-photo-2067631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", "name": "Bread"},
   ];
 }

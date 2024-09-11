@@ -3,5 +3,4 @@ class ImageConstants {
       "assets/images/onboarding_screen_bg.png";
 
   static const String SPLASH_LOGO = "assets/images/splash_logo.png";
-  static const String INGRDNT_NOODLES = "assets/images/noodles.png";
 }
