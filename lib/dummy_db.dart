@@ -1,5 +1,3 @@
-
-
 class DummyDb {
   static List trendingNowList = [
     {
@@ -185,15 +183,32 @@ class dummyDB3 {
     {
       "img":
           "https://images.pexels.com/photos/806457/pexels-photo-806457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "name": "Egg"
+      "name": "Egg",
+      "quantity": "120",
     },
     {
       "img":
           "https://images.pexels.com/photos/1435706/pexels-photo-1435706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "name": "Milk"
+      "name": "Milk",
+      "quantity": "342",
     },
-    {"img": "https://images.pexels.com/photos/306070/pexels-photo-306070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", "name": "Vanila"},
-    {"img": "https://images.pexels.com/photos/94443/pexels-photo-94443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", "name": "Butter"},
-    {"img": "https://images.pexels.com/photos/2067631/pexels-photo-2067631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", "name": "Bread"},
+    {
+      "img":
+          "https://images.pexels.com/photos/306070/pexels-photo-306070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "name": "Vanila",
+      "quantity": "231",
+    },
+    {
+      "img":
+          "https://images.pexels.com/photos/94443/pexels-photo-94443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "name": "Butter",
+      "quantity": "50",
+    },
+    {
+      "img":
+          "https://images.pexels.com/photos/2067631/pexels-photo-2067631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "name": "Bread",
+      "quantity": "80",
+    },
   ];
 }

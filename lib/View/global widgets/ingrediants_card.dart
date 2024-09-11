@@ -4,8 +4,10 @@ import 'package:food_recipe_app/utils/constants/color_constants.dart';
 class ingrediantsCard extends StatelessWidget {
   String name;
   String img;
+  String quantity;
   ingrediantsCard({
     this.haveArrow = false,
+    required this.quantity,
     required this.name,
     required this.img,
     super.key,
@@ -51,7 +53,7 @@ class ingrediantsCard extends StatelessWidget {
               ),
               Spacer(),
               Text(
-                "200g",
+                "$quantity g",
                 style: TextStyle(
                     color: ColorConstants.greyshade1,
                     fontSize: 14,

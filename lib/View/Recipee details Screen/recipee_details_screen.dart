@@ -43,6 +43,7 @@ class RecipeeDetailsScreen extends StatelessWidget {
                   itemBuilder: (context, index) => ingrediantsCard(
                         name: dummyDB3.ingredientsimg[index]["name"],
                         img: dummyDB3.ingredientsimg[index]["img"],
+                        quantity: dummyDB3.ingredientsimg[index]["quantity"],
                       ),
                   separatorBuilder: (context, index) => SizedBox(height: 12),
                   itemCount: dummyDB3.ingredientsimg.length),
