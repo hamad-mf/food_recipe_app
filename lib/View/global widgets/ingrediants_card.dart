@@ -7,12 +7,16 @@ class ingrediantsCard extends StatelessWidget {
   String quantity;
   ingrediantsCard({
     this.haveArrow = false,
+    this.cooktime = "",
+    this.serves = "",
     required this.quantity,
     required this.name,
     required this.img,
     super.key,
   });
   final bool haveArrow;
+  final String serves;
+  final String cooktime;
 
   @override
   Widget build(BuildContext context) {
@@ -52,13 +56,33 @@ class ingrediantsCard extends StatelessWidget {
                     fontWeight: FontWeight.w600),
               ),
               Spacer(),
-              Text(
-                "$quantity g",
-                style: TextStyle(
-                    color: ColorConstants.greyshade1,
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal),
-              ),
+              haveArrow
+                  ? SizedBox()
+                  : Text(
+                      "$quantity g",
+                      style: TextStyle(
+                          color: ColorConstants.greyshade1,
+                          fontSize: 14,
+                          fontWeight: FontWeight.normal),
+                    ),
+              haveArrow
+                  ? Text(
+                      "$serves",
+                      style: TextStyle(
+                          color: ColorConstants.greyshade1,
+                          fontSize: 14,
+                          fontWeight: FontWeight.normal),
+                    )
+                  : SizedBox(),
+              haveArrow
+                  ? Text(
+                      "$cooktime ",
+                      style: TextStyle(
+                          color: ColorConstants.greyshade1,
+                          fontSize: 14,
+                          fontWeight: FontWeight.normal),
+                    )
+                  : SizedBox(),
               haveArrow
                   ? Padding(
                       padding: const EdgeInsets.only(left: 8),
