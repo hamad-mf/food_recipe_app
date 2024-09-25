@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:food_recipe_app/View/Bookmarks%20Screen/bookmarks_screen.dart';
 import 'package:food_recipe_app/View/Create%20Recipee%20Screen/create_recipee_screen.dart';
 import 'package:food_recipe_app/View/Home%20Screen/home_screen.dart';
+import 'package:food_recipe_app/View/Notification%20Screen/notifications_screen.dart';
+import 'package:food_recipe_app/View/Profile%20Screen/profile_screen.dart';
 import 'package:food_recipe_app/utils/constants/color_constants.dart';
 
 class BottomNavbarScreen extends StatefulWidget {
@@ -15,12 +17,8 @@ class _BottomNavbarScreenState extends State<BottomNavbarScreen> {
   List Screen = [
     HomeScreen(),
     BookmarksScreen(),
-    Container(
-      color: Colors.green,
-    ),
-    Container(
-      color: Colors.orange,
-    ),
+    NotificationsScreen(),
+    ProfileScreen()
   ];
 
   int selectedindex = 0;

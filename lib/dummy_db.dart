@@ -212,3 +212,38 @@ class dummyDB3 {
     },
   ];
 }
+
+class dummyDB4 {
+  static List recipelist = [
+    {
+      'imageurl':
+          'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'rating': '5,0',
+      'title': 'How to make Italian\nspaghetti at home',
+    },
+    {
+      'imageurl':
+          'https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'rating': '4,7',
+      'title': 'Simple chicken meal\nprep dishes',
+    },
+    {
+      'imageurl':
+          'https://images.pexels.com/photos/884596/pexels-photo-884596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'rating': '4,7',
+      'title': 'Japanese fried rice',
+    },
+    {
+      'imageurl':
+          'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'rating': '5,0',
+      'title': 'How to make Italian\nspaghetti at home',
+    },
+    {
+      'imageurl':
+          'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'rating': '5,0',
+      'title': 'How to make Italian\nspaghetti at home',
+    },
+  ];
+}
