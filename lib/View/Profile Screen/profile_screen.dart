@@ -28,58 +28,56 @@ class _ProfileScreenState extends State<ProfileScreen> {
               _profiledataSection(),
               SizedBox(height: 12),
               _tabbarSection(),
-              SizedBox(
-                height: 400,
-                child: TabBarView(
-                  children: [
-                    ListView.separated(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 20, vertical: 24),
-                      itemBuilder: (context, index) => Customvideocard(
-                        onCardTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => RecipeeDetailsScreen(
-                                  rating: DummyDb.trendingNowList[index]
-                                      ["rating"],
-                                  title: DummyDb.trendingNowList[index]
-                                      ["title"],
-                                  thumbnail: DummyDb.trendingNowList[index]
-                                      ["imageurl"],
-                                  dp: DummyDb.trendingNowList[index]
-                                      ["profileImage"],
-                                  username: DummyDb.trendingNowList[index]
-                                      ["userName"],
-                                ),
-                              ));
-                        },
-                        width: double.infinity,
-                        rating: DummyDb.trendingNowList[index]["rating"],
-                        duration: DummyDb.trendingNowList[index]["duration"],
-                        thumbnail: DummyDb.trendingNowList[index]["thumbnail"],
-                        dp: DummyDb.trendingNowList[index]["dp"],
-                        title: DummyDb.trendingNowList[index]["title"],
-                        username: DummyDb.trendingNowList[index]["username"],
-                      ),
-                      separatorBuilder: (context, index) => SizedBox(
-                        height: 16,
-                      ),
-                      itemCount: DummyDb.trendingNowList.length,
-                    ),
-                    ListView.builder(
-                      itemCount: dummyDB4.recipelist.length,
-                      itemBuilder: (context, index) => CustomRecipeCard(
-                          rating: dummyDB4.recipelist[index]['rating'],
-                          title: dummyDB4.recipelist[index]['title'],
-                          imageUrl: dummyDB4.recipelist[index]['imageurl']),
-                    ),
-                  ],
-                ),
-              ),
+              _tabBarContents(),
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  SizedBox _tabBarContents() {
+    return SizedBox(
+      height: 400,
+      child: TabBarView(
+        children: [
+          ListView.separated(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+            itemBuilder: (context, index) => Customvideocard(
+              onCardTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => RecipeeDetailsScreen(
+                        rating: DummyDb.trendingNowList[index]["rating"],
+                        title: DummyDb.trendingNowList[index]["title"],
+                        thumbnail: DummyDb.trendingNowList[index]["imageurl"],
+                        dp: DummyDb.trendingNowList[index]["profileImage"],
+                        username: DummyDb.trendingNowList[index]["userName"],
+                      ),
+                    ));
+              },
+              width: double.infinity,
+              rating: DummyDb.trendingNowList[index]["rating"],
+              duration: DummyDb.trendingNowList[index]["duration"],
+              thumbnail: DummyDb.trendingNowList[index]["thumbnail"],
+              dp: DummyDb.trendingNowList[index]["dp"],
+              title: DummyDb.trendingNowList[index]["title"],
+              username: DummyDb.trendingNowList[index]["username"],
+            ),
+            separatorBuilder: (context, index) => SizedBox(
+              height: 16,
+            ),
+            itemCount: DummyDb.trendingNowList.length,
+          ),
+          ListView.builder(
+            itemCount: dummyDB4.recipelist.length,
+            itemBuilder: (context, index) => CustomRecipeCard(
+                rating: dummyDB4.recipelist[index]['rating'],
+                title: dummyDB4.recipelist[index]['title'],
+                imageUrl: dummyDB4.recipelist[index]['imageurl']),
+          ),
+        ],
       ),
     );
   }
